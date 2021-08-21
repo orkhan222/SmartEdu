@@ -11,11 +11,7 @@ class TeacherListView(ListView):
     model = Teacher
     template_name = 'teachers.html'
     context_object_name = 'teachers'
-    #git pusjpaginate_by = 1
-    #queryset = Teacher.objects.all()[:1]
 
-    #def get_queryset(self):
-        #return Teacher.objects.all()[:2]
 
 class TeacherDetailView(DetailView):
     model = Teacher
